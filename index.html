@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Web Dev — First Class</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<h1 class="logo">WebDev 101</h1>
+			<nav class="nav" id="mainNav">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+			<button id="darkToggle" class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+		</div>
+	</header>
+
+	<main>
+		<section id="home" class="hero">
+			<div class="container">
+				<h2>Welcome to your first web dev class</h2>
+				<p>Learn the basics of HTML, CSS, and JavaScript with a simple demo page.</p>
+				<p class="clock" id="liveClock">Time: --:--:--</p>
+			</div>
+		</section>
+
+		<section id="features" class="features container">
+			<h3>What you'll see</h3>
+			<div class="cards">
+				<article class="card" data-id="1">
+					<h4>HTML Structure</h4>
+					<p>Semantic elements and content layout.</p>
+				</article>
+				<article class="card" data-id="2">
+					<h4>CSS Styling</h4>
+					<p>Responsive layout and simple design.</p>
+				</article>
+				<article class="card" data-id="3">
+					<h4>JavaScript</h4>
+					<p>Interactivity: toggles and form handling.</p>
+				</article>
+			</div>
+		</section>
+
+		<section id="contact" class="contact container">
+			<h3>Contact / Try it</h3>
+			<form id="demoForm" novalidate>
+				<label>
+					Name
+					<input type="text" name="name" id="name" required placeholder="Your name">
+				</label>
+				<label>
+					Email
+					<input type="email" name="email" id="email" required placeholder="you@example.com">
+				</label>
+				<label>
+					Message
+					<textarea name="message" id="message" rows="4" placeholder="Say hi"></textarea>
+				</label>
+				<button type="submit">Send</button>
+				<p class="form-msg" id="formMsg" aria-live="polite"></p>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<small>Demo page — first web dev class</small>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
